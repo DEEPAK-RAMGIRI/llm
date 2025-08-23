@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-api_key = os.getenv("GOOGLE_API_KEY")
+api_key = "AIzaSyAhm72DoKI3lMgL33oaCNP4ZFFo1n2oO7g" #os.getenv("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     temperature=0.4,
@@ -41,7 +41,7 @@ def Question_and_answer():
 
     Behavior rules:
     - If the question is a greeting (like "hi", "hello", "hey"), reply with: 
-    "Hi, I'm Blue — your friendly, slightly witty AI sidekick. How can I help you today?" 
+    "Hi, I'm Blue I'am a created assistant. How can I help you today?" 
     You may rephrase this greeting slightly for variety, but keep it warm and human-friendly.
     - For any other question:
         - Use ONLY the context retrieved from the documents to answer.
@@ -74,5 +74,5 @@ def Question_and_answer():
 if __name__ == "__main__":
     create_vector_db()
     chain = Question_and_answer()
-    result = chain.invoke({"query":"who is deepak"})
-    print(result["result"])
+    # result = chain.invoke({"query":"who is deepak"})
+    # print(result["result"])
