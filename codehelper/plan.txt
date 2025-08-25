@@ -1,0 +1,84 @@
+Project Goal
+
+Create a web-based tool where users paste code snippets in multiple languages, and an LLM provides:
+
+Bug fixes
+
+Performance improvements
+
+Explanations
+
+Step-by-Step Roadmap
+Week 1: Planning & Setup
+
+Define Scope & Features
+
+Supported languages: Python, Java, C, JavaScript (start with 2–3, expand later)
+
+Features: Fix bugs, optimize code, explain logic, highlight errors
+
+Set up Node.js Backend
+
+Use Express.js for server
+
+Integrate OpenAI API or any LLM API for code understanding
+
+Set up Frontend
+
+HTML/CSS/JS or React for UI
+
+Text area for code input
+
+Buttons: “Analyze Code” / “Explain Code” / “Optimize Code”
+
+Display area for results
+
+Week 2: Core Functionality
+
+Backend API Design
+
+POST /analyze → receives code + language + task type
+
+Sends request to LLM API with instructions like:
+
+"Analyze this Python code, find bugs, suggest improvements, and explain it step by step."
+
+Frontend-Backend Connection
+
+Use Axios / Fetch to send code snippets to backend
+
+Display response in a readable format (syntax highlight with Prism.js)
+
+Test with Sample Code
+
+Start with simple snippets
+
+Ensure LLM correctly identifies issues and explains code
+
+Week 3: Advanced Features
+
+Multi-Language Support
+
+Add language selection dropdown
+
+Adjust prompts for each language
+
+Code Highlighting & Formatting
+
+Display original code with fixes highlighted
+
+Optional: allow copy of improved code
+
+User Experience Improvements
+
+Loading indicator while LLM responds
+
+Error handling if API fails or code is too long
+
+Week 4: Testing & Deployment
+
+Testing
+
+Test multiple programming languages
+
+Edge cases: syntax errors, large code snippets, complex logic
