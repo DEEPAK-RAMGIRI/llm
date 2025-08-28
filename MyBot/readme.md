@@ -1,4 +1,4 @@
-# LLM  
+# MY LLM  BOT 
 
 This is my **created LLM project** where I document the methods I used, the difficulties I faced, and how I approached building the projects. The chatbot is built using **Streamlit** and **LangChain**, with a vector database for semantic search and Q&A.  
 
